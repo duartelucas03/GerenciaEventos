@@ -16,4 +16,4 @@ Destinado a coordenações de curso, diretórios acadêmicos e comissões organi
 
 ---
 
-**Autores:** Artur Batalini e Lucas Soares
+**Autores:** Artur Batalini e Lucas Soares.
