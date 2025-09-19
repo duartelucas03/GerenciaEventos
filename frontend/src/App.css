@@ -1,0 +1,114 @@
+/* Fundo da página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #1e1e2f, #3b3b5a);
+  color: white;
+
+  /* Centralizar conteúdo com flex */
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+  min-height: 100vh;       /* garante altura total da tela */
+}
+
+/* Container principal */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza verticalmente */
+  align-items: center;     /* centraliza horizontalmente */
+  gap: 20px;               /* espaço entre formulários e lista */
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Cabeçalho */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Formulários */
+form {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+}
+
+/* Lista de eventos */
+.evento-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+div{
+  text-align: center;
+  margin: 0 auto;
+  
+}
+.evento-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+.evento-card p {
+  font-size: 1rem;
+  margin: 2px 0;
+  color: #c0c0c0;
+}
+
+/* Títulos menores */
+form h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .App, form, .evento-card {
+    width: 90%;
+  }
+}
